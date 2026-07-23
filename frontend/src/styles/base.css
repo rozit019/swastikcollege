@@ -2,6 +2,9 @@
   --primary: #c41e3a;
   --primary-light: #e53e5e;
   --primary-dark: #a01830;
+  --shadow-xl: 0 25px 50px -12px rgba(0, 0, 0, 0.15);
+  --blue-accent: #1e6f9e;
+  --blue-light: #3a8b8;
   --accent: #f5d76e;
   --text: #1a1a1a;
   --text-light: #555555;

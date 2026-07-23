@@ -6,7 +6,7 @@ import App from "./App";
 import "./styles/base.css";
 import "./styles/loader.css";
 import "./styles/navbar.css";
-
+import "./styles/footer.css";
 // Home page sections
 import "./styles/hero.css";
 import "./styles/experience.css";
@@ -19,7 +19,7 @@ import "./styles/news.css";
 import "./styles/sister.css";
 import "./styles/testimonials.css";
 import "./styles/cta.css";
-
+import "./styles/about.css";
 import "./styles/footer.css";
 import "./styles/responsive.css";
 

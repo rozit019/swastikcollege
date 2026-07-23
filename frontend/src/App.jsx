@@ -3,6 +3,7 @@ import Loader from "./components/Loader.jsx";
 import Navbar from "./components/Navbar.jsx";
 import Footer from "./components/Footer.jsx";
 import Home from "./pages/Home.jsx";
+import About from "./pages/About.jsx";
 
 function App() {
   return (
@@ -12,14 +13,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         {/* Add more routes as you build pages */}
-        <Route
-          path="/about"
-          element={
-            <div style={{ padding: "100px 2rem" }}>
-              <h1>About Page - Coming Soon</h1>
-            </div>
-          }
-        />
+        <Route path="/about" element={<About />} />
         <Route
           path="/courses"
           element={
