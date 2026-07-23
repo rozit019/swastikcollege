@@ -1,0 +1,144 @@
+.sister-institutes {
+  padding: 6rem 2rem;
+  background: white;
+}
+
+.sister-institutes .section-header {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 3rem;
+}
+
+.sister-institutes .section-header h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 2.2rem;
+  color: var(--text);
+  margin-bottom: 0.8rem;
+}
+
+.sister-institutes .section-header p {
+  color: var(--text-light);
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.institute-cards {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.5rem;
+}
+
+.institute-card {
+  background: var(--bg);
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  transition: all 0.4s;
+  display: flex;
+  flex-direction: column;
+}
+
+.institute-card:hover {
+  transform: translateY(-10px);
+  box-shadow: var(--shadow-lg);
+}
+
+.institute-image {
+  position: relative;
+  height: 220px;
+  overflow: hidden;
+}
+
+.institute-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.institute-card:hover .institute-image img {
+  transform: scale(1.1);
+}
+
+.institute-overlay {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.established {
+  background: var(--primary);
+  color: white;
+  padding: 0.4rem 1rem;
+  border-radius: 50px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.institute-body {
+  padding: 2rem;
+  position: relative;
+}
+
+.institute-icon {
+  width: 50px;
+  height: 50px;
+  background: var(--primary);
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.3rem;
+  margin-bottom: 1.2rem;
+  box-shadow: 0 6px 15px rgba(196, 30, 58, 0.25);
+}
+
+.institute-body h3 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 0.8rem;
+}
+
+.institute-body p {
+  color: var(--text-light);
+  font-size: 0.95rem;
+  line-height: 1.7;
+  margin-bottom: 1.2rem;
+}
+
+.institute-tags {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+}
+
+.inst-tag {
+  background: white;
+  padding: 0.3rem 0.9rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  color: var(--text-light);
+  border: 1px solid #e0e0e0;
+}
+
+.institute-link {
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 0.95rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: gap 0.3s;
+}
+
+.institute-link:hover {
+  gap: 0.8rem;
+}

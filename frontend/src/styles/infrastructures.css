@@ -1,0 +1,65 @@
+.infrastructure {
+  padding: 5rem 2rem;
+  background: #f0f2f5;
+}
+
+.infrastructure .section-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.infrastructure .section-header h2 {
+  font-family: "Inter", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #4a4a7a;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.infrastructure-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.infra-item {
+  height: 220px;
+  overflow: hidden;
+  border-radius: 4px;
+}
+
+.infra-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.infra-item:hover img {
+  transform: scale(1.08);
+}
+
+.infra-cta {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.infra-cta a {
+  color: var(--text-light);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: color 0.3s;
+}
+
+.infra-cta a:hover {
+  color: var(--primary);
+}
