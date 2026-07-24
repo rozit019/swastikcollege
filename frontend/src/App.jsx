@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar.jsx";
 import Footer from "./components/Footer.jsx";
 import Home from "./pages/Home.jsx";
 import About from "./pages/About.jsx";
+import Achievements from "./pages/achivements.jsx";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path="/" element={<Home />} />
         {/* Add more routes as you build pages */}
         <Route path="/about" element={<About />} />
+        <Route path="/achievements" element={<Achievements />} />
         <Route
           path="/courses"
           element={
