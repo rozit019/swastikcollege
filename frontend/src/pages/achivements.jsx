@@ -64,7 +64,7 @@ function Achievements() {
     {
       cat: "academic",
       year: "2024",
-      img: "/images/csit.jpg",
+      img: "/images/it.jpg",
       title: "Best Undergraduate Research Paper",
       desc: "A B.Sc. CSIT student's 6th-semester research was selected for publication at a national IT conference.",
       badge: "Published",
@@ -127,8 +127,7 @@ function Achievements() {
       <section
         className="achievements-hero"
         style={{
-          backgroundImage:
-            "url(/images/fest.jpg),backgroundPosition: 'center 80%'",
+          backgroundImage: "url(/images/fest.jpg)",
         }}
       >
         <div className="hero-overlay"></div>

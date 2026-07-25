@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 function About() {
   useEffect(() => {
     window.scrollTo(0, 0);
-    document.title = "Swastik College — About Us";
+    document.title = "About Us";
   }, []);
 
   // ADD THIS — scroll animations
