@@ -7,6 +7,8 @@ import About from "./pages/About.jsx";
 import NewsNotice from "./pages/news.jsx";
 import Facilities from "./pages/facilities";
 import ContactUs from "./pages/contact.jsx";
+import Achievements from "./pages/achivements.jsx";
+
 function App() {
   return (
     <BrowserRouter>
@@ -16,6 +18,7 @@ function App() {
         <Route path="/" element={<Home />} />
         {/* Add more routes as you build pages */}
         <Route path="/about" element={<About />} />
+        <Route path="/achievements" element={<Achievements />} />
         <Route
           path="/courses"
           element={
