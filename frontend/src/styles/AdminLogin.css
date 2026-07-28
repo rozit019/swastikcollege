@@ -1,4 +1,4 @@
-/* ========== AdminLogin ========== */
+/*  AdminLogin  */
 
 .admin-login-page {
   min-height: 100vh;
@@ -21,19 +21,20 @@
 }
 
 .admin-login-logo {
-  display: inline-flex;
+  width: 140px;
+  height: auto;
+  margin: 0 auto 8px;
+  display: flex;
   align-items: center;
   justify-content: center;
-  width: 4rem;
-  height: 4rem;
-  background-color: #e11d48;
-  border-radius: 1rem;
-  box-shadow:
-    0 10px 15px -3px rgba(0, 0, 0, 0.1),
-    0 4px 6px -2px rgba(0, 0, 0, 0.05);
-  margin-bottom: 1rem;
+  background: transparent; /* No red box */
 }
 
+.admin-login-logo img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
 .admin-login-logo svg {
   width: 2rem;
   height: 2rem;

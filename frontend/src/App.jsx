@@ -12,6 +12,7 @@ import Experience from "./pages/experience.jsx";
 import AdminLogin from "./pages/AdminLogin.jsx";
 import AdminPanel from "./pages/AdminPanel.jsx";
 import Chatbot from "./components/chatbot.jsx";
+import AdPopup from "./components/Adpopup.jsx";
 
 function AppContent() {
   const location = useLocation();
@@ -19,6 +20,7 @@ function AppContent() {
 
   return (
     <>
+      <AdPopup />
       <Loader />
       {!isAdminPage && <Navbar />}
 

@@ -70,7 +70,8 @@ export default function Experience() {
           workshops, and celebrations that shape every student's journey.
         </p>
         <div className="breadcrumb">
-          <Link to="/">Home</Link> &nbsp;/&nbsp; Experience
+          <Link to="/">Home</Link> <i className="fas fa-chevron-right"></i>{" "}
+          <span>Experience</span>
         </div>
       </header>
 

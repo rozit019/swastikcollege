@@ -124,9 +124,9 @@
   text-transform: uppercase;
   letter-spacing: 3px;
 }
-/* ============================================
+/* 
    ACHIEVEMENTS PAGE — NEW STYLES ONLY
-   ============================================ */
+    */
 
 /* Hero */
 .achievements-hero {
@@ -254,9 +254,9 @@
   padding: 6rem 2rem;
   background: white;
 }
-/* ============================================
+/* 
    ACHIEVEMENTS HERO — REDUCED HEIGHT
-   ============================================ */
+    */
 
 .achievements-hero {
   position: relative;
@@ -271,9 +271,9 @@
 
 /* ... rest of hero styles stay same ... */
 
-/* ============================================
+/* 
    SECTION HEADER — MATCH SCREENSHOT
-   ============================================ */
+    */
 
 .achievement-gallery .section-header {
   text-align: center;
@@ -451,9 +451,9 @@
   letter-spacing: 1px;
 }
 
-/* ============================================
+/* 
    TIMELINE — MATCH SCREENSHOT
-   ============================================ */
+    */
 
 .timeline-section {
   padding: 5rem 2rem;
@@ -576,9 +576,9 @@
   font-size: 0.9rem;
   line-height: 1.7;
 }
-/* ============================================
+/* 
    CTA
-   ============================================ */
+    */
 
 .achievements-cta {
   padding: 5rem 2rem;
@@ -679,9 +679,9 @@
   color: white;
 }
 
-/* ============================================
+/* 
    RESPONSIVE
-   ============================================ */
+    */
 @media (max-width: 992px) {
   .achv-grid {
     grid-template-columns: repeat(2, 1fr);
