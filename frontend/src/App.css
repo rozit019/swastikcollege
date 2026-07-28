@@ -182,3 +182,171 @@
     border-right-color: var(--border);
   }
 }
+/* ============================
+   NEWS & NOTICE PAGE STYLES
+   Add this to your main stylesheet
+   (e.g. App.css / index.css)
+   ============================ */
+
+/* --- Filter Tabs --- */
+.notice-filter-section {
+  padding: 30px 0 10px;
+}
+
+.notice-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.notice-tab {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 26px;
+  border-radius: 50px;
+  border: 2px solid #e2e6ee;
+  background: #ffffff;
+  color: #1a2744;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(26, 39, 68, 0.06);
+}
+
+.notice-tab i {
+  font-size: 14px;
+}
+
+.notice-tab:hover {
+  border-color: #1a2744;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(26, 39, 68, 0.12);
+}
+
+.notice-tab.active {
+  background: linear-gradient(135deg, #1a2744, #2c4270);
+  border-color: transparent;
+  color: #ffffff;
+  box-shadow: 0 6px 18px rgba(26, 39, 68, 0.25);
+}
+
+/* --- Notice / News Cards --- */
+.notice-grid {
+  align-items: stretch;
+}
+
+.notice-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.notice-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 10px 0 12px;
+}
+
+.notice-tag {
+  display: inline-block;
+  padding: 4px 14px;
+  background: #eef2fb;
+  color: #2c4270;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border-radius: 20px;
+}
+
+.notice-date {
+  font-size: 13px;
+  color: #8a93a6;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.notice-readmore {
+  margin-top: auto;
+  padding-top: 14px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+  font-size: 14px;
+  color: #1a2744;
+  text-decoration: none;
+  transition: gap 0.25s ease, color 0.25s ease;
+}
+
+.notice-readmore i {
+  font-size: 12px;
+  transition: transform 0.25s ease;
+}
+
+.notice-readmore:hover {
+  color: #2c4270;
+  gap: 12px;
+}
+
+.notice-readmore:hover i {
+  transform: translateX(3px);
+}
+
+/* --- Tribhuvan University Portal Section --- */
+.tu-portal-section {
+  padding: 80px 0;
+  background: #f7f9fc;
+}
+
+.tu-iframe-wrapper {
+  margin-top: 40px;
+  background: #ffffff;
+  padding: 16px;
+  border-radius: 16px;
+  box-shadow: 0 10px 40px rgba(26, 39, 68, 0.08);
+}
+
+.tu-iframe-wrapper iframe {
+  display: block;
+}
+
+.tu-iframe-note {
+  margin-top: 14px;
+  font-size: 13px;
+  color: #8a93a6;
+  text-align: center;
+}
+
+.tu-iframe-note i {
+  color: #2c4270;
+  margin-right: 4px;
+}
+
+.tu-iframe-note a {
+  color: #1a2744;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+/* --- Responsive --- */
+@media (max-width: 768px) {
+  .notice-tabs {
+    gap: 10px;
+  }
+
+  .notice-tab {
+    padding: 10px 18px;
+    font-size: 14px;
+  }
+
+  .tu-iframe-wrapper iframe {
+    height: 450px !important;
+  }
+}
