@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
+import Chatbot from "../components/chatbot";
 
 function Home() {
   // Typing animation
@@ -232,7 +233,7 @@ function Home() {
         </div>
 
         <div className="see-more fade-in">
-          <Link to="/gallery">
+          <Link to="/experience">
             See More <i className="fas fa-chevron-right"></i>
           </Link>
         </div>
@@ -297,7 +298,7 @@ function Home() {
         <div className="courses-grid">
           <div className="course-card fade-in">
             <div className="course-image">
-              <img src="/images/it.jpg" alt="B.Sc. CSIT" />
+              <img src="/images/csit.jpeg" alt="B.Sc. CSIT" />
             </div>
             <div className="course-body">
               <h3>
@@ -320,7 +321,7 @@ function Home() {
 
           <div className="course-card fade-in">
             <div className="course-image">
-              <img src="/images/bca.jpg" alt="BCA" />
+              <img src="/images/bca.jpeg" alt="BCA" />
             </div>
             <div className="course-body">
               <h3>Bachelor of Computer Application (BCA)</h3>
@@ -422,28 +423,16 @@ function Home() {
 
         <div className="infrastructure-grid">
           <div className="infra-item fade-in">
-            <img
-              src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=400&q=80"
-              alt="Classroom"
-            />
+            <img src="/images/sp.jpeg" alt="Classroom" />
           </div>
           <div className="infra-item fade-in">
-            <img
-              src="https://images.unsplash.com/photo-1521587760476-6c12a4b040da?auto=format&fit=crop&w=400&q=80"
-              alt="Library"
-            />
+            <img src="/images/library.jpeg" alt="Library" />
           </div>
           <div className="infra-item fade-in">
-            <img
-              src="https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&w=400&q=80"
-              alt="Campus"
-            />
+            <img src="/images/lab.jpeg" alt="Campus" />
           </div>
           <div className="infra-item fade-in">
-            <img
-              src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=400&q=80"
-              alt="Cafeteria"
-            />
+            <img src="/images/class.jpeg" alt="Cafeteria" />
           </div>
         </div>
 
@@ -569,7 +558,7 @@ function Home() {
         <div className="news-container">
           <div className="news-featured fade-in">
             <div className="featured-image">
-              <img src="/images/ad.jpg" alt="Featured News" />
+              <img src="/images/news.jpeg" alt="Featured News" />
               <div className="featured-badge">Featured</div>
             </div>
             <div className="featured-content">
@@ -816,6 +805,7 @@ function Home() {
           </p>
         </div>
       </section>
+      <Chatbot />
     </>
   );
 }

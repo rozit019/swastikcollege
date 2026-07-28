@@ -22,11 +22,18 @@ import "./styles/testimonials.css";
 import "./styles/cta.css";
 import "./styles/about.css";
 import "./styles/responsive.css";
+import "./styles/AdminLogin.css";
+import "./styles/AdminPanel.css";
+import "./styles/AdminExperienceUpload.css";
+import "./styles/AdminExperienceList.css";
+import "./styles/chatbot.css";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <HelmetProvider>  {/* WRAP APP */}
+    <HelmetProvider>
+      {" "}
+      {/* WRAP APP */}
       <App />
     </HelmetProvider>
-  </React.StrictMode>
+  </React.StrictMode>,
 );

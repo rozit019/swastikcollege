@@ -1,0 +1,229 @@
+/* ========== AdminExperienceUpload ========== */
+
+.exp-upload {
+  max-width: 42rem;
+}
+
+.exp-upload-header {
+  margin-bottom: 1.5rem;
+}
+
+.exp-upload-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #111827;
+  margin: 0;
+}
+
+.exp-upload-desc {
+  font-size: 0.875rem;
+  color: #6b7280;
+  margin-top: 0.25rem;
+  margin-bottom: 0;
+}
+
+.exp-upload-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.exp-upload-label {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #374151;
+  margin-bottom: 0.375rem;
+}
+
+.exp-upload-zone-wrap {
+  position: relative;
+}
+
+.exp-upload-preview {
+  position: relative;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  border: 1px solid #e5e7eb;
+}
+
+.exp-upload-preview-img {
+  width: 100%;
+  height: 14rem;
+  object-fit: cover;
+}
+
+.exp-upload-remove {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #ffffff;
+  padding: 0.375rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.exp-upload-remove:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.exp-upload-remove-icon {
+  width: 1rem;
+  height: 1rem;
+}
+
+.exp-upload-dropzone {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 12rem;
+  border: 2px dashed #d1d5db;
+  border-radius: 0.75rem;
+  cursor: pointer;
+  transition:
+    border-color 0.2s ease,
+    background-color 0.2s ease;
+}
+
+.exp-upload-dropzone:hover {
+  border-color: #fb7185;
+  background-color: rgba(255, 241, 242, 0.3);
+}
+
+.exp-upload-dropzone-icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  color: #9ca3af;
+  margin-bottom: 0.5rem;
+  transition: color 0.2s ease;
+}
+
+.exp-upload-dropzone:hover .exp-upload-dropzone-icon {
+  color: #f43f5e;
+}
+
+.exp-upload-dropzone-text {
+  font-size: 0.875rem;
+  color: #6b7280;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.exp-upload-dropzone:hover .exp-upload-dropzone-text {
+  color: #e11d48;
+}
+
+.exp-upload-dropzone-hint {
+  font-size: 0.75rem;
+  color: #9ca3af;
+  margin-top: 0.25rem;
+}
+
+.exp-upload-file-input {
+  display: none;
+}
+
+.exp-upload-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+}
+
+@media (min-width: 768px) {
+  .exp-upload-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.exp-upload-input {
+  width: 100%;
+  padding: 0.625rem 1rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.75rem;
+  font-size: 1rem;
+  color: #111827;
+  background-color: #ffffff;
+  box-sizing: border-box;
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.exp-upload-input:focus {
+  outline: none;
+  border-color: transparent;
+  box-shadow: 0 0 0 2px #e11d48;
+}
+
+.exp-upload-select {
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3e%3c/svg%3e");
+  background-position: right 0.5rem center;
+  background-repeat: no-repeat;
+  background-size: 1.5em 1.5em;
+  padding-right: 2.5rem;
+}
+
+.exp-upload-textarea {
+  resize: none;
+}
+
+.exp-upload-actions {
+  padding-top: 0.5rem;
+}
+
+.exp-upload-submit {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: #e11d48;
+  color: #ffffff;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 0.75rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 10px 15px -3px rgba(225, 29, 72, 0.2);
+  transition:
+    background-color 0.2s ease,
+    transform 0.15s ease;
+}
+
+.exp-upload-submit:hover {
+  background-color: #be123c;
+}
+
+.exp-upload-submit:active {
+  transform: scale(0.98);
+}
+
+.exp-upload-submit:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.exp-upload-spinner {
+  animation: exp-upload-spin 1s linear infinite;
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+@keyframes exp-upload-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.exp-upload-submit-icon {
+  width: 1.25rem;
+  height: 1.25rem;
+}

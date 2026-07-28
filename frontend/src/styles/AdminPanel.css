@@ -1,0 +1,152 @@
+/* ========== AdminPanel ========== */
+
+.admin-panel-page {
+  min-height: 100vh;
+  background-color: #f9fafb;
+}
+
+.admin-panel-header {
+  background-color: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.admin-panel-header-inner {
+  max-width: 72rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.admin-panel-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.admin-panel-logo {
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: #e11d48;
+  border-radius: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.admin-panel-logo-icon {
+  width: 1.25rem;
+  height: 1.25rem;
+  color: #ffffff;
+}
+
+.admin-panel-brand-title {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #111827;
+  line-height: 1.25;
+  margin: 0;
+}
+
+.admin-panel-brand-subtitle {
+  font-size: 0.75rem;
+  color: #6b7280;
+  margin: 0;
+}
+
+.admin-panel-logout {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #4b5563;
+  background: none;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition:
+    color 0.2s ease,
+    background-color 0.2s ease;
+}
+
+.admin-panel-logout:hover {
+  color: #e11d48;
+  background-color: #fff1f2;
+}
+
+.admin-panel-logout-icon {
+  width: 1rem;
+  height: 1rem;
+}
+
+.admin-panel-main {
+  max-width: 72rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2rem 1.5rem;
+}
+
+.admin-panel-tabs {
+  display: flex;
+  gap: 0.25rem;
+  background-color: rgba(229, 231, 235, 0.6);
+  padding: 0.25rem;
+  border-radius: 0.75rem;
+  width: fit-content;
+  margin-bottom: 2rem;
+}
+
+.admin-panel-tab {
+  padding: 0.625rem 1.25rem;
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  border: none;
+  background: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.admin-panel-tab-active {
+  background-color: #ffffff;
+  color: #e11d48;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.admin-panel-tab-inactive {
+  color: #6b7280;
+}
+
+.admin-panel-tab-inactive:hover {
+  color: #374151;
+}
+
+.admin-panel-tab-content {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.admin-panel-tab-icon {
+  width: 1rem;
+  height: 1rem;
+}
+
+.admin-panel-card {
+  background-color: #ffffff;
+  border-radius: 1rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  border: 1px solid #f3f4f6;
+  overflow: hidden;
+}
+
+.admin-panel-card-inner {
+  padding: 2rem;
+}

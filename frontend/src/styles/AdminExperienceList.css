@@ -1,0 +1,199 @@
+/* ========== AdminExperienceList ========== */
+
+.exp-list-loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  color: #9ca3af;
+}
+
+.exp-list-spinner {
+  animation: exp-list-spin 1s linear infinite;
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-right: 0.75rem;
+}
+
+@keyframes exp-list-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.exp-list-empty {
+  text-align: center;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.exp-list-empty-icon-wrap {
+  width: 4rem;
+  height: 4rem;
+  background-color: #f3f4f6;
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1rem;
+}
+
+.exp-list-empty-icon {
+  width: 2rem;
+  height: 2rem;
+  color: #9ca3af;
+}
+
+.exp-list-empty-title {
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: #111827;
+  margin: 0;
+}
+
+.exp-list-empty-text {
+  color: #6b7280;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+  margin-bottom: 0;
+}
+
+.exp-list-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.exp-list-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #111827;
+  margin: 0;
+}
+
+.exp-list-count {
+  font-size: 0.875rem;
+  color: #6b7280;
+}
+
+.exp-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.exp-list-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: #f9fafb;
+  border-radius: 0.75rem;
+  border: 1px solid #f3f4f6;
+  transition: border-color 0.2s ease;
+}
+
+.exp-list-item:hover {
+  border-color: #e5e7eb;
+}
+
+.exp-list-thumb {
+  width: 5rem;
+  height: 3.5rem;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  flex-shrink: 0;
+}
+
+.exp-list-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.exp-list-item-title {
+  font-weight: 600;
+  color: #111827;
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.exp-list-meta {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.25rem;
+}
+
+.exp-list-category {
+  font-size: 0.75rem;
+  font-weight: 500;
+  padding: 0.125rem 0.5rem;
+  border-radius: 9999px;
+}
+
+.exp-cat-sports {
+  background-color: #ffedd5;
+  color: #c2410c;
+}
+
+.exp-cat-tech {
+  background-color: #dbeafe;
+  color: #1d4ed8;
+}
+
+.exp-cat-culture {
+  background-color: #f3e8ff;
+  color: #7e22ce;
+}
+
+.exp-cat-academic {
+  background-color: #d1fae5;
+  color: #047857;
+}
+
+.exp-cat-default {
+  background-color: #f3f4f6;
+  color: #4b5563;
+}
+
+.exp-list-date {
+  font-size: 0.75rem;
+  color: #9ca3af;
+}
+
+.exp-list-delete {
+  opacity: 0;
+  padding: 0.5rem;
+  color: #9ca3af;
+  background: none;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition:
+    opacity 0.2s ease,
+    color 0.2s ease,
+    background-color 0.2s ease;
+}
+
+.exp-list-item:hover .exp-list-delete {
+  opacity: 1;
+}
+
+.exp-list-delete:hover {
+  color: #dc2626;
+  background-color: #fef2f2;
+}
+
+.exp-list-delete-icon {
+  width: 1.25rem;
+  height: 1.25rem;
+}

@@ -40,7 +40,7 @@ function Facilities() {
       icon: "fas fa-laptop-code",
       title: "Modern Computer Labs",
       desc: "Fully equipped computer labs with high-performance systems, updated software, and high-speed internet for practical and project work.",
-      image: "/images/computerlab.jpg",
+      image: "/images/lab.jpeg",
     },
     {
       icon: "fas fa-book-reader",
@@ -114,16 +114,16 @@ function Facilities() {
               Built for <span>Learning & Growth</span>
             </h2>
             <p className="lead">
-              At Swastik College, we believe a strong learning environment
-              goes hand-in-hand with strong infrastructure. From modern
-              computer labs to recreational spaces, every facility is
-              designed to support the holistic development of our students.
+              At Swastik College, we believe a strong learning environment goes
+              hand-in-hand with strong infrastructure. From modern computer labs
+              to recreational spaces, every facility is designed to support the
+              holistic development of our students.
             </p>
             <p>
               Our campus at Chardobato, Gattaghar, Bhaktapur is equipped with
-              the resources needed to help students not only excel
-              academically but also thrive personally and professionally
-              throughout their college journey.
+              the resources needed to help students not only excel academically
+              but also thrive personally and professionally throughout their
+              college journey.
             </p>
           </div>
 
@@ -160,8 +160,8 @@ function Facilities() {
               Campus <span>Facilities</span>
             </h2>
             <p>
-              Explore the range of facilities available to every Swastik
-              College student, faculty member, and staff on campus.
+              Explore the range of facilities available to every Swastik College
+              student, faculty member, and staff on campus.
             </p>
           </div>
 
