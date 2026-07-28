@@ -1,5 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import { HelmetProvider } from "react-helmet-async"; // ADD THIS
 import App from "./App";
 
 // Base + components
@@ -20,11 +21,12 @@ import "./styles/sister.css";
 import "./styles/testimonials.css";
 import "./styles/cta.css";
 import "./styles/about.css";
-import "./styles/footer.css";
 import "./styles/responsive.css";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+    <HelmetProvider>  {/* WRAP APP */}
+      <App />
+    </HelmetProvider>
+  </React.StrictMode>
 );

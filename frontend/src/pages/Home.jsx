@@ -87,7 +87,7 @@ function Home() {
 
   return (
     <>
-      {/* ========== HERO SECTION ========== */}
+      {/*  HERO SECTION  */}
       <section className="hero">
         <div className="hero-slideshow">
           <div
@@ -179,7 +179,7 @@ function Home() {
         </a>
       </section>
 
-      {/* ========== EXPERIENCE GALLERY ========== */}
+      {/*  EXPERIENCE GALLERY  */}
       <section className="experience" id="experience">
         <div className="experience-header fade-in">
           <h2>
@@ -238,7 +238,7 @@ function Home() {
         </div>
       </section>
 
-      {/* ========== ACHIEVEMENTS ========== */}
+      {/*  ACHIEVEMENTS  */}
       <section className="achievements" id="whyus">
         <div className="achievements-container">
           <div className="achievements-text fade-in">
@@ -282,7 +282,7 @@ function Home() {
         </div>
       </section>
 
-      {/* ========== COURSES ========== */}
+      {/*  COURSES  */}
       <section className="courses" id="programs">
         <div className="section-header fade-in">
           <h2>Browse Our Courses</h2>
@@ -363,7 +363,7 @@ function Home() {
         </div>
       </section>
 
-      {/* ========== PARTNERS ========== */}
+      {/*  PARTNERS  */}
       <section className="partners" id="partners">
         <div className="partners-container">
           <div className="partners-text fade-in">
@@ -414,7 +414,7 @@ function Home() {
         </div>
       </section>
 
-      {/* ========== INFRASTRUCTURE ========== */}
+      {/*  INFRASTRUCTURE  */}
       <section className="infrastructure">
         <div className="section-header fade-in">
           <h2>Our Infrastructural Assets</h2>
@@ -454,7 +454,7 @@ function Home() {
         </div>
       </section>
 
-      {/* ========== IT CLUB ========== */}
+      {/*  IT CLUB  */}
       <section className="it-club">
         <div className="section-header fade-in">
           <h2>
@@ -555,7 +555,7 @@ function Home() {
         </div>
       </section>
 
-      {/* ========== NEWS & NOTICES ========== */}
+      {/*  NEWS & NOTICES  */}
       <section className="news-notices" id="news">
         <div className="section-header fade-in">
           <span className="section-tag">Updates</span>
@@ -637,7 +637,7 @@ function Home() {
         </div>
       </section>
 
-      {/* ========== SISTER INSTITUTES ========== */}
+      {/*  SISTER INSTITUTES  */}
       <section className="sister-institutes">
         <div className="section-header fade-in">
           <span className="section-tag">Our Network</span>
@@ -707,7 +707,7 @@ function Home() {
         </div>
       </section>
 
-      {/* ========== TESTIMONIALS ========== */}
+      {/*  TESTIMONIALS  */}
       <section className="testimonials">
         <div className="section-header fade-in">
           <span className="section-tag">Student Voices</span>
@@ -770,29 +770,50 @@ function Home() {
         </div>
       </section>
 
-      {/* ========== CTA ========== */}
+      {/*  CTA  */}
       <section className="cta" id="contact">
         <div className="cta-container fade-in">
-          <h2>Start Your IT Journey</h2>
+          <span className="cta-badge">
+            <i className="fas fa-fire"></i> Admissions Open for 2026
+          </span>
+
+          <h2>Start Your IT Journey at Swastik</h2>
           <p>
-            Apply now for BCA or B.Sc. CSIT and become part of Nepal's leading
-            IT education community. Admissions open for 2026 intake.
+            Join <strong>500+ students</strong> who chose Nepal's leading IT
+            college. BCA & B.Sc. CSIT programs designed for real-world success.
           </p>
+
+          <div className="cta-trust">
+            <div className="trust-item">
+              <i className="fas fa-check-circle"></i>
+              <span>Top TU Results</span>
+            </div>
+            <div className="trust-item">
+              <i className="fas fa-check-circle"></i>
+              <span>100% Placement Support</span>
+            </div>
+            <div className="trust-item">
+              <i className="fas fa-check-circle"></i>
+              <span>Industry Expert Faculty</span>
+            </div>
+          </div>
+
           <div className="cta-buttons">
             <Link to="/online-enquiry" className="btn btn-primary">
               <i className="fas fa-file-alt"></i> Apply Now
             </Link>
-            <Link
-              to="/contact"
-              className="btn btn-secondary"
-              style={{ borderColor: "var(--text)", color: "var(--text)" }}
-            >
+            <Link to="/contact" className="btn btn-secondary btn-outline-dark">
               <i className="fas fa-phone"></i> Contact Us
             </Link>
             <Link to="/visit-campus" className="btn btn-secondary">
               <i className="fas fa-map-marker-alt"></i> Visit Campus
             </Link>
           </div>
+
+          <p className="cta-note">
+            <i className="fas fa-shield-alt"></i>
+            No application fee · Limited seats available
+          </p>
         </div>
       </section>
     </>
