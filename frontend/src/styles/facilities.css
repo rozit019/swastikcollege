@@ -1,0 +1,58 @@
+.facility-grid {
+  align-items: stretch;
+}
+
+.facility-card {
+  padding-top: 0;
+  overflow: hidden;
+}
+
+.facility-img {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.facility-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.facility-card:hover .facility-img img {
+  transform: scale(1.08);
+}
+
+.facility-overlay {
+  position: absolute;
+  bottom: 12px;
+  left: 12px;
+  width: 46px;
+  height: 46px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #1a2744, #2c4270);
+  color: #ffffff;
+  border-radius: 50%;
+  font-size: 18px;
+  box-shadow: 0 6px 16px rgba(26, 39, 68, 0.3);
+}
+
+.facility-card h3 {
+  padding: 0 4px;
+}
+
+.facility-card p {
+  padding: 0 4px;
+}
+
+@media (max-width: 768px) {
+  .facility-img {
+    height: 180px;
+  }
+}

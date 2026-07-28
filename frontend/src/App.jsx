@@ -4,7 +4,9 @@ import Navbar from "./components/Navbar.jsx";
 import Footer from "./components/Footer.jsx";
 import Home from "./pages/Home.jsx";
 import About from "./pages/About.jsx";
-
+import NewsNotice from "./pages/news.jsx";
+import Facilities from "./pages/facilities";
+import ContactUs from "./pages/contact.jsx";
 function App() {
   return (
     <BrowserRouter>
@@ -22,14 +24,7 @@ function App() {
             </div>
           }
         />
-        <Route
-          path="/news"
-          element={
-            <div style={{ padding: "100px 2rem" }}>
-              <h1>News Page - Coming Soon</h1>
-            </div>
-          }
-        />
+        <Route path="/news" element={<NewsNotice />} />
         <Route
           path="/blog"
           element={
@@ -54,14 +49,7 @@ function App() {
             </div>
           }
         />
-        <Route
-          path="/contact"
-          element={
-            <div style={{ padding: "100px 2rem" }}>
-              <h1>Contact Page - Coming Soon</h1>
-            </div>
-          }
-        />
+        <Route path="/contact" element={<ContactUs />} />
         <Route
           path="/online-enquiry"
           element={
@@ -69,7 +57,9 @@ function App() {
               <h1>Online Enquiry - Coming Soon</h1>
             </div>
           }
+
         />
+        <Route path="/facilities" element={<Facilities />} />
       </Routes>
       <Footer />
     </BrowserRouter>
