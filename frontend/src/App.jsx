@@ -69,7 +69,8 @@ function AppContent() {
         <Route path="/facilities" element={<Facilities />} />
       </Routes>
 
-      {!isAdminPage && <Footer /> && <Chatbot />}
+      {!isAdminPage && <Footer />}
+      {!isAdminPage && <Chatbot />}
     </>
   );
 }

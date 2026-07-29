@@ -58,7 +58,7 @@ export default function AdPopup() {
             }}
           />
 
-          {/* Fallback if image fails to load */}
+          {/* when doesnt load */}
           <div className="ad-popup-fallback" style={{ display: "none" }}>
             <h2>Admissions Open 2026</h2>
             <p>Apply now for BCA, B.Sc. CSIT & BIT programs.</p>
